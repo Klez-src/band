@@ -2,12 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #333;
-  color: white;
   background-image: url('bg.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: white;
 }
 
 nav {
@@ -45,6 +44,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5em;
+  color: white;
 }
 
 .header-text {
@@ -79,8 +79,10 @@ header h1 {
 
 .contact-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-start;
   padding: 20px;
+  gap: 20px;
   background-color: transparent;
 }
 
@@ -110,7 +112,7 @@ header h1 {
 }
 
 .input-field {
-  margin: 10px 0;
+  margin: 5px 0;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -123,7 +125,7 @@ header h1 {
 }
 
 textarea.input-field {
-  height: 100px;
+  height: 80px;
   resize: none;
 }
 
@@ -136,5 +138,5 @@ button {
   cursor: pointer;
   width: 100px;
   align-self: flex-end;
-  margin-top: 10px;
+  margin-top: 5px;
 }
