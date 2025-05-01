@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #333;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+#the-band {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+#secretary {
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+#contact {
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
